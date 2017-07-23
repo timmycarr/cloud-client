@@ -3,16 +3,15 @@ This repo contains a dockerfile to assist with building an image that will run t
 
 Background:
 
-The vRealize Cloud Client is distributed as a native java based execuitble distributed for both Windows and Linux based platforms.
+The vRealize Cloud Client is distributed as a native java based executable distributed for both Windows and Linux platforms.
 
-The vRealize CloudClient is availble here:
+The vRealize CloudClient is available here:
 
 https://code.vmware.com/web/dp/tool/cloudclient/4.4.0
 
 Version 4.4 of the client requires version 8 of the Java runtime environment to execute.
 
-The Dockerfile provides the correct version of Java and will require that you modify the copy command to copy the extratcted version of the CloudClient zip file into the dockerfile.
-
+The Dockerfile provides the correct version of Java and will require that you modify the copy command to copy the extracted version of the CloudClient zip file into the dockerfile.
 
 Step 1: clone this repo
 
@@ -20,7 +19,7 @@ Step 1: clone this repo
 
 Step 2: Download the latest version of the cloud client [here](https://code.vmware.com/web/dp/tool/cloudclient/4.4.0) and unzip into the cloned directory.
 
-Step 3: Rename the directory in lines 4 and 7 of the Dockerfile with the correct directory name (I've renamed the long Unzipped VMware directory name to VCC-4.4.0 in this example).
+Step 3: Rename the directory in lines 4 and 7 of the Dockerfile with the correct directory name (I've renamed the long unzipped VMware directory name to VCC-4.4.0 in this example).
 
 Step 4: Build the container from the Dockerfile directory:
 
