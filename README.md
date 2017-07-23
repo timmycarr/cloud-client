@@ -24,7 +24,7 @@ Step 3: Rename the directory in lines 4 and 7 of the Dockerfile with the correct
 
 Step 4: Build the container from the Dockerfile directory:
 
-`docker build -t <username>\vcc:4.4 `
+`docker build -t <username>\vcc:4.4 . `
 
 Step 5: Run the container
 
