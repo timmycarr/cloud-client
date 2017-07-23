@@ -12,3 +12,9 @@ https://code.vmware.com/web/dp/tool/cloudclient/4.4.0
 Version 4.4 of the client requires version 8 of the Java runtime environment to execute.
 
 The Dockerfile provides the correct version of Java and will require that you modify the copy command to copy the extratcted version of the CloudClient zip file into the dockerfile.
+
+Need to download and update the Dockerfile with your VMware source directory unzipped.
+
+Build your container locally and then execute with:
+
+docker run -it <image name> 
