@@ -13,8 +13,19 @@ Version 4.4 of the client requires version 8 of the Java runtime environment to 
 
 The Dockerfile provides the correct version of Java and will require that you modify the copy command to copy the extratcted version of the CloudClient zip file into the dockerfile.
 
-Need to download and update the Dockerfile with your VMware source directory unzipped.
 
-Build your container locally nd then execute it interactively to allow acceptance of the VMware EULA:
+Step 1: clone this repo
 
-docker run -it \<image name> 
+`git clone https://github.com/timmycarr/cloud-client.git`
+
+Step 2: Download the latest version of the cloud client [here](https://code.vmware.com/web/dp/tool/cloudclient/4.4.0) and unzip into the cloned directory.
+
+Step 3: Rename the directory in lines 4 and 7 of the Dockerfile with the correct directory name (I've renamed the long Unzipped VMware directory name to VCC-4.4.0 in this example).
+
+Step 4: Build the container from the Dockerfile directory:
+
+`docker build -t <username>\vcc:4.4 `
+
+Step 5: Run the container
+
+`docker run -it <username>\vcc:4.4`
