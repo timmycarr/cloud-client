@@ -15,6 +15,6 @@ The Dockerfile provides the correct version of Java and will require that you mo
 
 Need to download and update the Dockerfile with your VMware source directory unzipped.
 
-Build your container locally and then execute with:
+Build your container locally nd then execute it interactively to allow acceptance of the VMware EULA:
 
-docker run -it <image name> 
+docker run -it \<image name> 
